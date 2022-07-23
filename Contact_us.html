@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Book store</title>
+        <link rel = "stylesheet" href = "style.css">
+
+    </head>
+    <body class="author">
+<main> 
+    <h1 id="contact">Contact Us</h1>
+    <form method="post" action="">
+    <div class="row">
+        <div class="label">
+            <label class="label_" for="purpose">Contact purpose:</label>
+            <select required id="purpose" name="purpose">
+                <option value="bookselling">I want to sell books</option>
+                <option value="bookbuying">I want to buy books</option>
+            </select>
+        </div>
+    </div>
+
+    <div>
+        <div class="label">
+            <label for="fname">Full name:</label>
+            <input required type="text" id="fname" name="fname" maxlength="50" title="Enter your name"/>
+        </div>
+    </div>
+
+    <div>
+        <div class="label">
+            <label for="mail">Email:</label>
+            <input required type="email" id="mail" name="mail" title="Enter email"/>
+        </div>
+    </div>
+
+    <div>
+        <div class="label">
+            <label for="phone">Phone number:</label>
+            <input required type="tel" id="phone" name="phone" pattern="[0-9]{9,13}" title="Enter phone number(At least 10 digits)"/>
+        </div>
+    </div>
+
+    <div>
+        <div class="label">
+            <label>How can we contact you:</label>
+        </div>
+        <div class="field">
+            <input  type="checkbox" id="phone_option" name="contact_option" value="phone" />
+            <label  for="phone_option">By phone</label>
+        </div>
+        <div class="field">
+            <input  type="checkbox" id="mail_option" name="contact_option" value="mail" />
+            <label for="mail_option">By email</label>
+        </div>
+    </div>
+
+    
+    <div>
+        <div class="label">
+            <label>Do you want to receive our weekly newsletter:</label>
+            <input  type="radio" id="yes_option" name="daily_news" value="yes" checked="checked" />
+            <label for="yes_option">Yes</label>
+            <input  type="radio" id="no_option" name="daily_news" value="no" />
+            <label for="no_option">No</label>
+        </div>
+        
+    <div>
+        <div class="label">
+            <label for="message">Others:</label>
+        </div>
+        <div class="field">
+            <textarea 
+            id="message" name="message" rows="9" cols="70">
+            </textarea>
+        </div>
+    </div>
+        <div>
+        <input type="submit" value="Submit" id="submit"/>
+        <input type="reset" value="Reset" id="reset" />
+        </div>
+    </form>
+
+</main>  
+
+<!-- Top nav -->
+
+<header class="topnav">
+    <img class = "box" id = "logo" src="images/95f8588d6469a16271ea2d2fad419d00.png" alt="bookstore logo">
+    <div class = "box"><a class = "a" href = index.html>Home</a></div>
+    <div class = "box"><a class = "a" href = Category.html>Science fiction</a></div>
+    <div class = "box"><a class = "a" href = Category.html>Education</a></div>
+    <div class = "box"><a class = "a" href = Category.html>Cooking</a></div>
+</header></br></br>
+
+    <!-- Bottom nav -->
+
+<footer class="bottomnav">
+    <div class = "box"><a class = "a" href = #>About us</a></div>
+    <div class = "box"><a class = "a" href = #>Privacy policy</a></div>
+    <div class = "box"><a class = "a" href = #>Terms</a></div>
+    <div class = "box"><a class = "a" href = #>Copyright</a></div>
+    <div class = "box"><a class = "a" href = Contact_us.html>Contact us</a></div>
+</footer>
+
+    </body>
+</html>
